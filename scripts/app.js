@@ -10,6 +10,9 @@ form.addEventListener('submit', (e) => {
             input.classList.add('invalid')
             console.log('error')
             input.parentElement.lastElementChild.classList.add('invalid')
+        } else {
+            input.classList.remove('invalid')
+            input.parentElement.lastElementChild.classList.remove('invalid')
         }
     })
 })
